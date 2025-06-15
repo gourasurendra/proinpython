@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRO IN PYTHON - Online Course</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Merienda', cursive;
+      background: linear-gradient(120deg, #00FF5B, #0014FF);
+      color: white;
+    }
+
+    header {
+      background: linear-gradient(to right, #000428, #004e92);
+      padding: 25px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      background: linear-gradient(45deg, #ff6a00, #ee0979);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0 auto;
+    }
+
+    nav {
+      margin-right: 20px;
+    }
+
+    nav a {
+      color: #00d2ff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    .hero {
+      padding: 100px 20px;
+      text-align: center;
+      background: linear-gradient(to right, #ff0076, #590fb7);
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.3em;
+      margin-bottom: 35px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .button-block {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 20px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .button-block p {
+      font-size: 1.1em;
+      margin-bottom: 15px;
+    }
+
+    .button-block a {
+      display: inline-block;
+      background: linear-gradient(to right, #402565, #30BE96);
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-size: 1.2em;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .button-block a:hover {
+      transform: scale(1.1);
+    }
+
+    .content-section {
+      background: linear-gradient(to right, #373B44, #4286f4);
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .content-section h3 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .content-section p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .blog-link {
+      margin: 50px 20px;
+      text-align: center;
+      background: linear-gradient(to right, #373B44, #4286f4);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+    }
+
+    .blog-link p {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+    }
+
+    .blog-link a {
+      color: #ffe600;
+      font-size: 1.2em;
+      text-decoration: underline;
+    }
+
+    .footer {
+      background: linear-gradient(to right, #141e30, #243b55);
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 1em;
+    }
+
+    .social-icons {
+      margin-top: 15px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+      color: white;
+      font-size: 1.6em;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+      color: #00eaff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PRO IN PYTHON</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="https://proinpythonlng.blogspot.com" target="_blank">Course</a>
+      <a href="https://proinpythonlng.blogspot.com" target="_blank">Blog</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Learn Python from Scratch to Advance</h2>
+    <p>Join our comprehensive online Python course and become a real-world problem solver.</p>
+    <div class="buttons">
+      <div class="button-block">
+        <p>Start with the basics of Python programming—perfect for those with no coding background.</p>
+        <a href="https://proinpythonlng.blogspot.com/2025/06/what-is-python-and-python-for-beginning.html" target="_blank">Beginner Friendly</a>
+      </div>
+      <div class="button-block">
+        <p>Test your knowledge with our interactive Python quiz and track your progress.</p>
+        <a href="https://proinpythonlng.blogspot.com/2025/06/quiz-python-quiz.html" target="_blank">Python Quiz</a>
+      </div>
+      <div class="button-block">
+        <p>Work on real-world Python projects to build practical skills and enhance your portfolio.</p>
+        <a href="https://proinpythonlng.blogspot.com/2025/06/real-world-project-in-python.html" target="_blank">Real World Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <h3>What You Will Learn</h3>
+    <p>
+      Our Python course is designed for both beginners and advanced learners. You’ll master core concepts like variables, loops, functions, and classes, then progress to advanced topics including web development, data analysis, and automation with real-world projects that prepare you for industry demands.
+    </p>
+  </section>
+
+  <section class="blog-link" id="blog">
+    <p>Explore more on our blog:</p>
+    <a href="https://proinpythonlng.blogspot.com" target="_blank">https://proinpythonlng.blogspot.com</a>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 PRO IN PYTHON. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/the_monarch_ruk/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/goura-yakobu-3ab449260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://whatsapp.com/channel/0029VaFeFhDHLHQTi8LCmI2F" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://proinpythonfromgy.quora.com/?ch=10&oid=7541253&share=396067ef&srid=5nhg1m&target_type=tribe" target="_blank"><i class="fab fa-quora"></i></a>
+      <a href="https://t.me/proinpython" target="_blank"><i class="fab fa-telegram"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
