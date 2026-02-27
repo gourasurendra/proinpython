@@ -18,6 +18,19 @@
       background: linear-gradient(120deg, #00FF5B, #0014FF);
       color: white;
     }
+.counter {
+  font-size: 1.4em;
+  margin-top: 15px;
+  text-shadow: 0 0 10px #00eaff,
+               0 0 20px #00eaff,
+               0 0 40px #00eaff;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #00eaff; }
+  to   { text-shadow: 0 0 25px #00eaff; }
+}
 
     header {
       background: linear-gradient(to right, #000428, #004e92);
@@ -180,7 +193,9 @@
       <a href="https://proinpythonlng.blogspot.com" target="_blank">Blog</a>
     </nav>
   </header>
-
+<p class="counter">
+  Total Visitors: <span id="visitorCount">Loading...</span>
+</p>
   <section class="hero" id="home">
     <h2>Learn Python from Scratch to Advance</h2>
     <p>Join our comprehensive online Python course and become a real-world problem solver.</p>
@@ -222,6 +237,15 @@
       <a href="https://t.me/proinpython" target="_blank"><i class="fab fa-telegram"></i></a>
     </div>
   </footer>
+<script>
+  async function updateVisitorCount() {
+    const response = await fetch("https://api.countapi.xyz/hit/proinpython-site/visits");
+    const data = await response.json();
+    document.getElementById("visitorCount").innerText = data.value;
+  }
+
+  updateVisitorCount();
+</script>
 </body>
 </html>
 
